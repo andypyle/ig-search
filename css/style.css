@@ -37,6 +37,13 @@ body {
 		height: 4em;
 		clear: both;
 	}
+
+	footer div span {
+		padding: .75em 1.25em;
+		font-size: 1.25em;
+		font-weight: 700;
+		display: block;
+	}
 }
 
 header {
