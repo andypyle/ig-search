@@ -38,6 +38,51 @@ button[type='submit'] {
 	border-radius: .2em;
 }
 
+figure {
+	padding-top: 1em;
+	padding-bottom: 1em;
+
+}
+
+figure .outer {
+	padding: .35em;
+	border: 1px dotted #A3A8A6;
+	border-radius: .35em;
+}
+
+figure .result {
+	position: relative;
+	overflow: hidden;
+	border-radius: .35em;
+}
+
+figure .result .resultMeta {
+	color: #F0F7F4;
+	background-color: rgba(0,0,0,0.45);
+	display: block;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: .5em;
+	position: absolute;
+	font-size: 1.25em;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+/*
+figure figcaption {
+	color: white;
+	background-color: rgba(0,0,0,0.6);
+	font-size: 1em;
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 1000;
+}
+*/
+
 .hl-red {
 	background-color: rgba(255,0,0,0.85);
 }
