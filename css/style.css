@@ -1,3 +1,10 @@
+html,
+body {
+	overflow-x: hidden;
+	height: 100%;
+	min-height: 100%;
+}
+
 body {
 	background-color: #F0F7F4;
 	color: #58635D;
@@ -18,12 +25,17 @@ body {
 	header h2 {
 		color: #5A6660;
 		font-size: 1.5em !important;
-		line-height: 2em;
+		line-height: 0em;
 	}
 
 	.form-group button {
 		display: block;
 		width: 100%;
+	}
+	.notify {
+		display: block;
+		height: 4em;
+		clear: both;
 	}
 }
 
@@ -41,7 +53,7 @@ header h1 {
 header h2 {
 	color: #5A6660;
 	font-size: 2em;
-	line-height: 2em;
+	line-height: 3.5em;
 }
 
 header input[type='text']{
@@ -53,6 +65,10 @@ button[type='submit'] {
 	font-size: 1.75em;
 	font-weight: 700;
 	padding: .9em;
+}
+
+.notify {
+	height: 8em;
 }
 
 .error {
@@ -87,6 +103,17 @@ figure .result {
 	border-radius: .35em;
 }
 
+figure .result img {
+	-webkit-filter: grayscale(55%);
+	filter: grayscale(55%);
+	transition: .1s ease-in;
+}
+
+figure .result img:hover {
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
+
 figure .result .resultMeta {
 	color: #F0F7F4;
 	background-color: rgba(0,0,0,0.45);
@@ -101,18 +128,16 @@ figure .result .resultMeta {
 	right: 0;
 }
 
-/*
-figure figcaption {
-	color: white;
-	background-color: rgba(0,0,0,0.6);
-	font-size: 1em;
-	display: block;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	z-index: 1000;
+footer div {
+	padding: 4em 0 4em 0;
 }
-*/
+
+footer div span {
+	padding: 0 1.25em;
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
 
 .hl-red {
 	background-color: rgba(255,0,0,0.85);
