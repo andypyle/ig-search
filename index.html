@@ -22,7 +22,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body ng-controller="instaController">
-<header class="container-full">
+<header class="container">
 	<div class="row">
 		<div class="col-md-12 text-center">
 			<h1><i class="fa fa-instagram"></i> Search</h1>
@@ -49,8 +49,7 @@
 </header>
 
 
-<main class="container-full">
-	<div class="container">
+<main class="container">
 	<section class="row">
 		<figure class="col-lg-3 col-md-3 col-sm-4 col-xs-12 velocity-opposites-transition-fadeIn" data-velocity-opts="{ stagger: 200 }" ng-repeat="result in results.data">
 			<div class="outer">
@@ -64,18 +63,15 @@
 				</div>
 			</div>			
 		</figure>		
-	</section>
-	</div>
-
-	<footer class="container-full">
-	<div class="col-xs-12 text-center">
-		<span>Made by <a href="http://andypyle.github.io" target="_BLANK">Andy Pyle</a>.</span>
-		<span>View code on <a href="http://github.com/andypyle/ig-search/" target="_BLANK">GitHub</a>.</span>
-	</div>	
-	</footer>
-
+	</section>	
 </main>
 
+<footer class="container-full">
+		<div class="col-xs-12 text-center">
+			<span>Made by <a href="http://andypyle.github.io" target="_BLANK">Andy Pyle</a>.</span>
+			<span>View code on <a href="http://github.com/andypyle/ig-search/" target="_BLANK">GitHub</a>.</span>
+		</div>	
+	</footer>
 
 
 
