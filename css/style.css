@@ -2,6 +2,30 @@ body {
 	background-color: #F0F7F4;
 	color: #58635D;
 }
+
+@media (max-width:768px){
+	header {
+		padding: 0 !important;
+	}
+
+	header h1 {
+		font-size: 5em !important;
+		text-transform: uppercase;
+		font-weight: 700;
+		line-height: 0;
+	}
+
+	header h2 {
+		color: #5A6660;
+		font-size: 1.5em !important;
+		line-height: 2em;
+	}
+
+	.form-group button {
+		display: block;
+		width: 100%;
+	}
+}
 header {
 	padding: 3em 0;
 }
