@@ -21,7 +21,7 @@
 	<!-- My CSS -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body ng-controller="instaController">
 <header class="container">
 	<div class="row">
 		<div class="col-md-12 text-center">
@@ -30,43 +30,31 @@
 	</div>
 	<div class="row">
 		<div class="col-md-12 col-xs-12 text-center">
-			<form class="form-inline col-xs-12" name="search">
+			<form ng-submit="searchGo(searchTermModel)" class="form-inline col-xs-12" name="searchIg" novalidate>
 				<div class="form-group">
-					<input type="text" class="form-control" />
+					<input type="text" class="form-control" ng-model="searchTermModel" name="searchTerm" required />
 					<button type="submit" class="btn btn-primary btn-lg">Go!</button>
 				</div>
 			</form>
-			<h2>Searching Instagram for <span class="searchingFor">kittens</span></h2>
+			<span class="error" ng-if="search.$submitted" ng-show="search.searchTerm.$error.required">Search term required!</span>
+			<h2>Searching Instagram for <span class="searchingFor">{{ searchTermModel }}</span></h2>
 		</div>
 	</div>
 </header>
 
 
-<main class="container" ng-controller="instaController">
+<main class="container">
 	<section class="row">
-		<figure class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+		<figure class="col-lg-3 col-md-3 col-sm-4 col-xs-12" ng-repeat="result in results.data">
 			<div class="outer">
 			<div class="result">
-				<img src="https://placekitten.com/g/500/500" class="img-responsive" />
+				<img ng-src="{{result.images.standard_resolution.url}}" class="img-responsive" />
 				<span class="resultMeta">
-					Author
+					{{ result.user.username }}
 				</span>
 			</div>
 			</div>			
-		</figure>
-
-		<figure class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-			<div class="outer">
-			<div class="result">
-				<img src="https://placekitten.com/g/500/500" class="img-responsive" />
-				<span class="resultMeta">
-					Author
-				</span>
-			</div>
-			</div>			
-		</figure>
-
-		
+		</figure>		
 	</section>
 </main>
 

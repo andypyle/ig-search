@@ -26,6 +26,7 @@ body {
 		width: 100%;
 	}
 }
+
 header {
 	padding: 3em 0;
 }
@@ -52,6 +53,12 @@ button[type='submit'] {
 	font-size: 1.75em;
 	font-weight: 700;
 	padding: .9em;
+}
+
+.error {
+	font-size: 1.25em;
+	font-weight: 700;
+	color: tomato;
 }
 
 .searchingFor {
