@@ -1,0 +1,43 @@
+body {
+	background-color: #F0F7F4;
+	color: #58635D;
+}
+header {
+	padding: 3em 0;
+}
+
+header h1 {
+	font-size: 7.5em;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 1em;
+}
+
+header h2 {
+	color: #5A6660;
+	font-size: 2em;
+	line-height: 2em;
+}
+
+header input[type='text']{
+	font-size: 2.25em;
+	padding: 1em .5em;
+}
+
+button[type='submit'] {
+	font-size: 1.75em;
+	font-weight: 700;
+	padding: .9em;
+}
+
+.searchingFor {
+	color: #616D67;
+	background-color: #E1E8E5;
+	padding: .15em .35em;
+	font-weight: 600;
+	border-radius: .2em;
+}
+
+.hl-red {
+	background-color: rgba(255,0,0,0.85);
+}
